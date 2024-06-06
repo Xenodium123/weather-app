@@ -16,6 +16,6 @@ class WeatherReportFactory:
     def get_report(format_type):
         if format_type == "json":
             return JSONWeatherReport()
-        # Można tu dodać inne formaty raportów w przyszłości.
+      
         else:
             raise ValueError(f"Nieobsługiwany format raportu: {format_type}")
